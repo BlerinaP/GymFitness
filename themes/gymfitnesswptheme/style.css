@@ -213,11 +213,13 @@ img {
     }
 }
 /**Classes list**//
-.classes-list {
+.classes-list,
+.blog-entries {
     margin-top: 4rem;
 }
 @media(min-width: 768px){
-    .classes-list{
+    .classes-list,
+    .blog-entries{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -285,6 +287,12 @@ img {
     font-weight: 700;
     font-size: 2rem;
     margin: 0;
+}
+.card .card-content .date-published{
+    color: var(--white);
+}
+.card .card-content .date-published span{
+    color: var(--primary);
 }
 /**Single class**/
 p.content-class{

@@ -14,7 +14,8 @@
                          <?php echo get_the_author_meta('display_name'); ?>
                     </a>
                    </p>
-                   <p class="date-published">
+                   <p class="date-published meta">
+                       <span>Date:</span>
                       <?php the_time(get_option('date_format'));?>
                    </p>
                </div>
