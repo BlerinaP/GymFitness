@@ -15,11 +15,19 @@ get_header();?>
 
     <ul class="gallery-images">
         <?php
+         $i=0;
            foreach($gallery_images_ids as $id):
-           $image = wp_get_attachment_image_src($id, 'square');?>
-           <img src="<?php echo $image[0]; ?>"/>
+            $size =($i === 3 || $i == 6) ? 'portrait' : 'square';
+            $imageThumb = wp_get_attachment_image_src($id, $size);
+            $image = wp_get_attachment_image_src($id, 'large');
+           ?>
+           <li>
+             <a href="<?php echo $image[0];?>" data-lightbox="gallery">
+               <img src="<?php echo $imageThumb[0]; ?>"/>
+             </a>
+           </li>
 
-         <?php endforeach; ?>
+         <?php $i++; endforeach; ?>
     </ul>
 
     <?php endwhile; ?>
