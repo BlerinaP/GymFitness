@@ -302,32 +302,38 @@ p.content-class{
     text-align: center;
 }
 /**SIdebar**/
-.sidebar a{
-    color: var(--black);
-
+.sidebar{
+    margin-left: 5rem;
 }
-.sidebar .widget{
+
+.sidebar a {
+    color: var(--black);
+}
+.sidebar .widget {
     margin-bottom: 2rem;
 }
-.sidebar-class{
+
+.sidebar-class {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 
 }
-.sidebar .sidebar-widget-image{
+.sidebar .sidebar-widget-image {
     flex: 0 0 30%;
 }
-.sidebar .class-content{
+
+.sidebar .class-content {
     flex: 0 0 calc(70% - 2rem);
 }
 .sidebar .class-content p {
     font-size: 1.6rem;
     font-weight: 700;
-    padding: 0;
+    margin: 0;
 }
-.sidebar .classes-header{
+.sidebar .classes-header {
     margin-bottom: 2rem;
+
 }
 /**Gallery**/
 .gallery-images{
