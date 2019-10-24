@@ -47,7 +47,7 @@
           <h2 class="text-primary text-center">Our Classes</h2>
           <?php  gymfitness_calsses_list(4); ?>
           <div class="button-container">
-              <a classes="button" href="<?php echo get_permalink( get_page_by_title('Classes'));?>">
+              <a class="button" href="<?php echo get_permalink( get_page_by_title('Classes'));?>">
                   View our Classes
               </a>
           </div>
