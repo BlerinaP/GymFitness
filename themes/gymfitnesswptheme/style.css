@@ -634,4 +634,73 @@ span.wpcf7-not-valid-tip{
     font-size: 2.2rem;
 }
 
+/**Testimonials Blog**/
+.testimonials{
+    background: linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.75)
+    ), url(img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
+    padding: 12rem 0;
+}
+.testimonials h2{
+    color: var(--white);
+}
+.container-testimonials {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.testimonial{
+    color: var(--white);
+}
+.testimonial-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(min-width: 768px){
+    .testimonial-footer{
+        justify-content: flex-end;
+    }
+}
+.testimonial-footer img{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+ }
+.testimonial blockquote{
+    position: relative;
+    padding-left: 12rem;
+}
+.testimonial blockquote::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 9rem;
+    background-image:url(img/quote.svg);
+    background-repeat: no-repeat;
+}
+.testimonial-footer{
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.bx-wrapper{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: var(--white);
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: var(--primary);
+}

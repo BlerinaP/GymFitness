@@ -5,5 +5,8 @@
      });
 
      //Run the bxSlider on testimonials
-      $('.testimonials-list').bxSlider();
+      $('.testimonials-list').bxSlider({
+          controls: false,
+          mode: 'horizontal'
+      });
 });
